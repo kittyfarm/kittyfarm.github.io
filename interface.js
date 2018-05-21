@@ -1,7 +1,383 @@
 
-abi = [{ "constant": false, "inputs": [], "name": "getFreeCHICKEN", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "ceoAddress", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "getBalance", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "initialized", "outputs": [{ "name": "", "type": "bool" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "rt", "type": "uint256" }, { "name": "rs", "type": "uint256" }, { "name": "bs", "type": "uint256" }], "name": "calculateTrade", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "getMyChicken", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "eth", "type": "uint256" }, { "name": "contractBalance", "type": "uint256" }], "name": "calculateEggBuy", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "marketEggs", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "sellEggs", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [{ "name": "eggs", "type": "uint256" }], "name": "seedMarket", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [{ "name": "amount", "type": "uint256" }], "name": "devFee", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [{ "name": "ref", "type": "address" }], "name": "hatchEggs", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "getMyEggs", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "lastHatch", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [], "name": "buyEggs", "outputs": [], "payable": true, "stateMutability": "payable", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "claimedEggs", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "eth", "type": "uint256" }], "name": "calculateEggBuySimple", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "eggs", "type": "uint256" }], "name": "calculateEggSell", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "referrals", "outputs": [{ "name": "", "type": "address" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "STARTING_CHICKEN", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "", "type": "address" }], "name": "hatcheryCHICKEN", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [{ "name": "adr", "type": "address" }], "name": "getEggsSinceLastHatch", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "EGGS_TO_HATCH_1CHICKEN", "outputs": [{ "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }]
+abi = [
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "buyEggs",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "getFreeCat",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "ref",
+				"type": "address"
+			}
+		],
+		"name": "hatchEggs",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "eggs",
+				"type": "uint256"
+			}
+		],
+		"name": "seedMarket",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "sellEggs",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "eth",
+				"type": "uint256"
+			},
+			{
+				"name": "contractBalance",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateEggBuy",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "eth",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateEggBuySimple",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "eggs",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateEggSell",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "rt",
+				"type": "uint256"
+			},
+			{
+				"name": "rs",
+				"type": "uint256"
+			},
+			{
+				"name": "bs",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateTrade",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "ceoAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "claimedEggs",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "devFee",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "EGGS_TO_HATCH_1Cat",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "adr",
+				"type": "address"
+			}
+		],
+		"name": "getEggsSinceLastHatch",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMyCat",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMyEggs",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "hatcheryCat",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "initialized",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "lastHatch",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "marketEggs",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "referrals",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "STARTING_CAT",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
 
-contractAddress = "0x246a3cc8430909cb9b4ea2c55064045096656792"//"0x53e0B5790b67BFE4218b48D8DA14a5D47D8daeF8"//"0xd1B9D4f28A4F782Ea66C449A667135266Bccb1Bc"//"0x0a11657E4341DC2CB11282F3782E418B63F673F6"//"0x00E904aB49c0417a60Cd674d2B2628a3FD5be57d"//"0x4d990acf40aec18478849dfbb58119e55a182166"//"0xe00d440e22b3f4e8dc9672223f6e683eba8b5f06"//"0x42e33f20aced16114e53c3b236426384a5eca7f6"//"0x4b9a47db592e0a49ea913f70800bd1272c757103"//"0xf50493dd5931a35ddf4ce9c347c3de0a554f4de4"//"0x27fe61ed7f0b113fae9697219b4bfd3a80011512"
+contractAddress = "0x67601d7a7cbbd77368785122c508503f168b1daa"//"0x53e0B5790b67BFE4218b48D8DA14a5D47D8daeF8"//"0xd1B9D4f28A4F782Ea66C449A667135266Bccb1Bc"//"0x0a11657E4341DC2CB11282F3782E418B63F673F6"//"0x00E904aB49c0417a60Cd674d2B2628a3FD5be57d"//"0x4d990acf40aec18478849dfbb58119e55a182166"//"0xe00d440e22b3f4e8dc9672223f6e683eba8b5f06"//"0x42e33f20aced16114e53c3b236426384a5eca7f6"//"0x4b9a47db592e0a49ea913f70800bd1272c757103"//"0xf50493dd5931a35ddf4ce9c347c3de0a554f4de4"//"0x27fe61ed7f0b113fae9697219b4bfd3a80011512"
 
 function buyEggs(eth, callback) {
 	var contractAbi = web3.eth.contract(abi);
@@ -23,7 +399,7 @@ function buyEggs(eth, callback) {
 function getFreeShrimp(eth, callback) {
 	var contractAbi = web3.eth.contract(abi);
 	var myContract = contractAbi.at(contractAddress);
-	var outputData = myContract.getFreeCHICKEN.getData();
+	var outputData = myContract.getFreeCat.getData();
 	var endstr = web3.eth.sendTransaction({ to: contractAddress, from: null, data: outputData, value: eth },
 		function (error, result) {
 			if (!error) {
@@ -213,7 +589,7 @@ function devFee(amount, callback) {
 function EGGS_TO_HATCH_1SHRIMP(callback) {
 	var contractAbi = web3.eth.contract(abi);
 	var myContract = contractAbi.at(contractAddress);
-	var outputData = myContract.EGGS_TO_HATCH_1CHICKEN.getData();
+	var outputData = myContract.EGGS_TO_HATCH_1Cat.getData();
 	var endstr = web3.eth.call({ to: contractAddress, from: null, data: outputData },
 		function (error, result) {
 			if (!error) {
@@ -297,7 +673,7 @@ function getMyEggs(callback) {
 function getMyShrimp(callback) {
 	var contractAbi = web3.eth.contract(abi);
 	var myContract = contractAbi.at(contractAddress);
-	var outputData = myContract.getMyChicken.getData();
+	var outputData = myContract.getMyCat.getData();
 	var endstr = web3.eth.call({ to: contractAddress, from: null, data: outputData },
 		function (error, result) {
 			if (!error) {
@@ -317,7 +693,7 @@ function getMyShrimp(callback) {
 function hatcheryShrimp(callback) {
 	var contractAbi = web3.eth.contract(abi);
 	var myContract = contractAbi.at(contractAddress);
-	var outputData = myContract.hatcheryCHICKEN.getData();
+	var outputData = myContract.hatcheryCat.getData();
 	var endstr = web3.eth.call({ to: contractAddress, from: null, data: outputData },
 		function (error, result) {
 			if (!error) {
